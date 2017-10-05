@@ -5,6 +5,19 @@
   <link rel="stylesheet" type="text/css" href="../src/css/style.css">
 </head>
 <body>
- <img src='../img/bg.jpg' alt='' />	
+ <!-- <img src='../img/bg.jpg' alt='' />	 -->
+ <div id="login">  
+      <form>  
+        <dl>
+          <input type="text" placeholder="账号" v-model="inputtext.name">
+        </dl>
+        <dl>  
+          <input type="text" placeholder="密码" v-model="inputtext.password">  
+        </dl>
+        <dl>
+          <button @click="btn">登录</button>
+        </dl>
+       </form>       
+    </div>
 </body>
 </html>
