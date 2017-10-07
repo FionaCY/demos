@@ -1,16 +1,15 @@
-#container{
-	background: #ccc;
-	width: 500px;
-	height: 800px;
-}
-
-html,body{
+body{
     height: 100%;
     margin: 0;
     padding: 0;
 }
+.container{
+    background: #ccc;
+    width: 500px;
+    height: 800px;
+}
 .bg-div{
-    background: url('./img/bg.jpg') center;
+    background: url('../img/bg.jpg') center;
     width: 100%;
     height: 100%;
     position: fixed;

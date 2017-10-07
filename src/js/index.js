@@ -1,3 +1,4 @@
+import '../css/style.css'
 // import $ from 'jquery'
 import Vue from 'vue/dist/vue.common.js'
 
