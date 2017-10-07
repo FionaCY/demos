@@ -1,23 +1,70 @@
-<!doctype html>
+<!Doctype html>
 <head>
   <meta charset="utf-8">
-  <title>Webpack && Vue Demos</title>
-  <link rel="stylesheet" type="text/css" href="../src/css/style.css">
+  <title>login</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
  <!-- <img src='../img/bg.jpg' alt='' />	 -->
- <div id="login">  
-      <form>  
+  <div class="container">
+
+    <div clas="loginform">
+
+      <dl class="tab">
+        <dt>
+        <a href="#login" class="active">Login<a/>
+        </dt>
+        <dt>
+          <a href="#register">Register</a>
+        </dt>
+      </dl>
+   
+
+      <div class="word">
+        <h1>Welcome!</h1>
+        <p>if you have account,please input and login,or you can register directly.</p>
+      </div>
+
+      <form>
         <dl>
-          <input type="text" placeholder="账号" v-model="inputtext.name">
-        </dl>
-        <dl>  
-          <input type="text" placeholder="密码" v-model="inputtext.password">  
-        </dl>
-        <dl>
-          <button @click="btn">登录</button>
-        </dl>
-       </form>       
+          <dd>
+            <input type="text" placeholder="Username" />
+          </dd>
+          <dd>
+            <input type="text" placeholder="Password" />
+          </dd>
+          <dd>
+            <input type="button" value="Login" class="btn1" />
+            <input type="button" value="Forget?" class="btn2">
+          </dd>
+        </ul>
+      </form>
+
     </div>
+
+    <div class="registerform">
+      <div class="word">
+      <h1>Register</h1>
+      <p>You should totally sign up for our super awesome service.</p>
+    </div>
+
+    <form>
+        <dl>
+          <dd>
+            <input type="text" placeholder="Username" />
+          </dd>
+          <dd>
+            <input type="text" placeholder="Password" />
+          </dd>
+          <dd>
+            <input type="button" value="Sign up" class="btn3" />
+          </dd>
+        </dl>
+      </form>
+
+  </div>
+
+
+
 </body>
 </html>
