@@ -1,7 +1,7 @@
 body{
-  background: url('../img/img14.png') no-repeat;
+  background: url('../img/img25.png') no-repeat;
   background-size: 100%;
-  opacity: 0.7
+  opacity: 0.8
 }
 input {
   border: none;
@@ -20,7 +20,7 @@ input {
 }
 #login fieldset legend{
 text-align: center;
-  background-color: #66ccff;
+  background-color: #0099cc;
   -webkit-border-radius: 20px 20px 0 0;
   -moz-border-radius: 20px 20px 0 0;
   border-radius: 20px 20px 0 0;
@@ -33,7 +33,7 @@ text-align: center;
 
 
 #login fieldset {
-  background-color: #009966;
+  background-color: #99cccc;
   -webkit-border-radius: 0 0 20px 20px;
   -moz-border-radius: 0 0 20px 20px;
   border-radius: 0 0 20px 20px;
@@ -41,7 +41,7 @@ text-align: center;
 }
 
 #login fieldset p {
-  color: #cccc99;
+  color: #fff;
   margin-bottom: 14px;
   font-size: 20px;
 }
@@ -64,7 +64,7 @@ text-align: center;
 }
 
 #login fieldset input[type="submit"] {
-  background-color: #cccc99;
+  background-color: #0099cc;
   color: #fff;
   display: block;
   margin: 0 auto;
