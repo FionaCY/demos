@@ -3,6 +3,7 @@ body{
   background-size: 100%;
   opacity: 0.8
 }
+
 input {
   border: none;
   font-family: inherit;
@@ -12,12 +13,11 @@ input {
   -webkit-appearance: none;
 }
 
-/* ---------- LOGIN ---------- */
-
 #login {
   margin: 50px auto;
   width: 400px;
 }
+
 #login fieldset legend{
 text-align: center;
   background-color: #0099cc;
@@ -29,8 +29,6 @@ text-align: center;
   font-size: 28px;
   padding: 20px 26px;
 }
-
-
 
 #login fieldset {
   background-color: #99cccc;
