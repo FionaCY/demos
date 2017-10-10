@@ -5,7 +5,10 @@ const cleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
 	context: path.resolve(__dirname, '../'),
-	entry: './src/js/index.js',
+	entry: {
+		index: './src/js/index.js',
+		feedback: './src/js/feedback.js'
+	},
 	output: {
 		filename: '[name].[hash].js',
 		path: path.resolve(__dirname, '../dist')
@@ -48,7 +51,14 @@ module.exports = {
 	},
 	plugins: [
 		new htmlWepackPlugin({
-			template: './src/html/index.html'
+			template: './src/html/index.html',
+			filename: './dist/html/index.html',
+			chunks: ['index']
+		}),
+		new htmlWepackPlugin({
+			template: './src/html/feedback.html',
+			filename: './dist/html/feedback.html',
+			chunks: ['feedback']
 		}),
 		new cleanWebpackPlugin(['dist'], { root: path.resolve(__dirname, '..') })
 	]
