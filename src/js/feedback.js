@@ -32,7 +32,8 @@ for(let i = 0; i < res.length; i++) {
 	questionList += '<div class="demostyle"><div><div id="question"><p id="title"></p></div><div id="star"><img id="1" src="" /><img id="2" src="../img/feedback/star-invert.png" /><img id="3" src="../img/feedback/star-invert.png" /><img id="4" src="../img/feedback/star-invert.png" /><img id="5" src="../img/feedback/star-invert.png" /></div></div></div>'
 }
 $('.demo').html(questionList)
-console.log($('#1').html())
+$('.demostyle img').attr('src', pngStar)
+console.log('')
 
 // var i, j, x = "",p;
 // for (i=1;i<=res.length;i++) {
